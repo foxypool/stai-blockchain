@@ -112,18 +112,6 @@ jobs:
         Expand-Archive -Path "$env:GITHUB_WORKSPACE\bladebit\bladebit.zip" -DestinationPath "$env:GITHUB_WORKSPACE\bladebit\"
         rm "$env:GITHUB_WORKSPACE\bladebit\bladebit.zip"
 
-    # Create our own venv outside of the git directory JUST for getting the ACTUAL version so that install can't break it
-    - name: Get version number
-      id: version_number
-      run: |
-        python -m venv ..\venv
-        . ..\venv\Scripts\Activate.ps1
-        pip3 install setuptools_scm
-        $env:STAICOIN_INSTALLER_VERSION = python .\build_scripts\installer-version.py -win
-        echo "$env:STAICOIN_INSTALLER_VERSION"
-        echo "::set-output name=STAICOIN_INSTALLER_VERSION::$env:STAICOIN_INSTALLER_VERSION"
-        deactivate
-
     - name: Build Windows installer with build_scripts\build_windows.ps1
       env:
         WIN_CODE_SIGN_PASS: ${{ secrets.WIN_CODE_SIGN_PASS }}
