@@ -98,7 +98,7 @@ $Env:NODE_OPTIONS = "--max-old-space-size=3000"
 npm install --save-dev electron-winstaller
 npm install -g electron-packager
 npm install --force
-npm install ip-address@5
+npm install geoip-lite@1
 npm audit fix
 
 git status

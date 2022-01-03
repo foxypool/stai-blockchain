@@ -48,7 +48,7 @@ cd stai-blockchain-gui || exit
 
 echo "npm build"
 npm install
-npm install ip-address@5
+npm install geoip-lite@1
 npm audit fix
 npm run build
 LAST_EXIT_CODE=$?
