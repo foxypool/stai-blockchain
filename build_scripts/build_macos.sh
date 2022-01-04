@@ -38,6 +38,7 @@ cd .. || exit
 cd stai-blockchain-gui || exit
 
 echo "npm build"
+npm i -g npm
 npm install
 npm install geoip-lite@1
 npm audit fix
