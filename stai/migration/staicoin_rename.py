@@ -37,15 +37,19 @@ class StaicoinRenameMigration:
             log.exception("Encountered an error during migration")
 
     def _is_applicable(self) -> bool:
-        if not self.previous_root.exists():
-            return False
+        return (self.previous_root.exists() and not self.new_root.exists())\
+               or (self.previous_root_mainnet.exists() and not self.new_root_mainnet.exists()) \
+               or self._old_ca_exists_in_new_root()
 
-        return not self.new_root.exists() or (self.previous_root_mainnet.exists() and not self.new_root_mainnet.exists())
+    def _old_ca_exists_in_new_root(self) -> bool:
+        ca_path = join(self.new_root_mainnet, 'config', 'ssl', 'ca')
+
+        return Path(join(ca_path, 'staicoin_ca.crt')).exists()
 
     def _move_root_dir(self):
         if not self.new_root.exists():
             move(str(self.previous_root), str(self.new_root))
-        else:
+        elif not self.new_root_mainnet.exists():
             move(str(self.previous_root_mainnet), str(self.new_root_mainnet))
 
     def _migrate_ca_certs(self):
