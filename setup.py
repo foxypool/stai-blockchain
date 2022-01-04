@@ -72,6 +72,7 @@ kwargs = dict(
         "stai.farmer.pooling",
         "stai.harvester",
         "stai.introducer",
+        "stai.migration",
         "stai.plotters",
         "stai.plotting",
         "stai.pools",

@@ -19,9 +19,9 @@ class StaicoinRenameMigration:
     @staticmethod
     def run():
         previous_root = Path(expanduser("~/.staicoin")).resolve()
-        if not previous_root.exists():
-            return
         new_root = Path(expanduser("~/.stai")).resolve()
+        if not previous_root.exists() or new_root.exists():
+            return
         log.warning("Applying migration: Renaming .staicoin to .stai ..")
 
         # 1. Migrate root
