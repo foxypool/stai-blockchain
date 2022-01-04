@@ -10,4 +10,4 @@ except DistributionNotFound:
 
 PYINSTALLER_SPEC_PATH = resource_filename("stai", "pyinstaller.spec")
 
-StaicoinRenameMigration.run()
+StaicoinRenameMigration().run()
