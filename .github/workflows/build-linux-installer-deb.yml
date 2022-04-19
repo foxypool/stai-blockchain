@@ -1,9 +1,9 @@
 name: Linux .deb installer on Python 3.8
 
 on:
-  #push:
-  #  branches:
-  #    - main
+  push:
+    branches:
+      - main
   #  tags:
   #      - '**'
   #pull_request:
