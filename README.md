@@ -1,7 +1,9 @@
 <p id="station"></p>
 <h2>STAI - FOOD, WATER AND ELECTRICITY - WORLDWIDE</h2>
 
-Find more about our project : https://www.station-i.de/stai/en
+Find more about Station-i : https://www.station-i.de/stai/en
+
+Find more about STAI: https://stai.global/
 
 Join our growing community : https://discord.com/invite/stai-blockchain
 
@@ -9,14 +11,31 @@ Follow us on Twitter : https://twitter.com/staiglobal
 
 Check our new Facebook page : https://www.facebook.com/STAIGlobal
 
+Follow us on Instagram: https://www.instagram.com/staiglobal/
+
 Get our electricity : https://lumenaza.community/staienergy/
+<br><br><br><br>
+
+<h4>PAY WITH STAI</h4>
+
+Get our energy: https://lumenaza.community/staienergy/
+
+Visit our shop: https://shop.stai.global/
+
+Check out some classified ads: https://classifieds.stai.global/
+
+Hire a freelancer: https://webfreelance.work/
+
+STAI Card presale: https://shop.stai.global/product/stai-global-goldcard/
+
+STAI Cashback: https://cashback.stai.global/
 
 
 <br><br>
-Wallets:<br>
-<a href="https://github.com/STATION-I/stai-blockchain/releases/download/1.1.1/Stai-1.1.1.dmg">Mac Wallet</a> (1.1.1)<br>
-<a href="https://github.com/STATION-I/stai-blockchain/releases/download/1.1.1/StaiSetup-1.1.1.exe">Windows Wallet</a> (1.1.1)<br>
-<a href="https://github.com/STATION-I/stai-blockchain/releases/download/1.1.1/stai-blockchain_1.1.1_amd64.deb">Ubuntu Wallet</a> (1.1.1)<br>
+Mainnet Wallets:<br>
+<a href="https://github.com/STATION-I/stai-blockchain/releases/download/1.2.0/Stai-1.2.0.dmg">Mac Wallet</a> (1.2.0)<br>
+<a href="https://github.com/STATION-I/stai-blockchain/releases/download/1.2.0/StaiSetup-1.2.0.exe">Windows Wallet</a> (1.2.0)<br>
+<a href="https://github.com/STATION-I/stai-blockchain/releases/download/1.2.0/stai-blockchain_1.2.0_amd64.deb">Ubuntu Wallet</a> (1.2.0)<br>
 <br><br>
 Nodes:
 
